@@ -1,7 +1,36 @@
 .flutuante-sindilojas-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    /* Adicione mais estilos conforme necessário */
+    bottom: 190px;
+    right: 0;
+    z-index: 1000;    
+}
+
+.flutuante-sindilojas-btn img {
+    display: block;
+    width: 100%; /* Faz a imagem preencher todo o botão */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.flutuante-sindilojas-btn {
+    width: 250px;
+    height: 50px;
+    /* Restante do CSS */
+}
+
+@media (max-width: 768px) {
+    .flutuante-sindilojas-btn {
+        width: 150px; /* Menor que 250px */
+        height: 30px; /* Proporcionalmente menor que 50px */
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flutuante-sindilojas-btn {
+            width: 150px;
+    height: 50px;
+    bottom: 100px;
+    right: 10px;
+    }
 }
